@@ -15,7 +15,6 @@
 */
 
 .page {
-  margin: 0;
   font-family: var(--main-font);
   color: var(--font-color);
 }
@@ -49,7 +48,6 @@
 }
 
 .first-page-box {
-  font-weight: 400;
   text-transform: uppercase;
   font-family: var(--accent-font);
   font-size: 14px;
@@ -146,12 +144,8 @@
 
 .content-card-picture-part-label {
   position: absolute;
-  color: var(--font-color);
   font-family: var(--accent-font);
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   opacity: 0.5;
   mix-blend-mode: hard-light;
   z-index: 1;
@@ -172,7 +166,7 @@
 .content-card-title {
   padding: 2px 8px 6px;
   font-size: 18px;
-  font-weight: 700;
+  font-variation-settings: "wght" var(--title-weight);
 }
 
 .content-card-text {
@@ -181,6 +175,7 @@
   gap: 27px;
   font-size: 18px;
   line-height: 21px;
+  font-variation-settings: "wght" var(--main-font-weight);
 }
 
 .content-card-button-part {
@@ -306,10 +301,6 @@ margin: 0 0px 0 -8px;
   }
 }
 
-.like-icon.is-liked .contour {
-  fill: var(--heart-color);
-  transition: fill 0.1s linear;
-}
 
 .footer-save_button {
   min-width: 306px;
@@ -341,7 +332,7 @@ margin: 0 0px 0 -8px;
   font-family: var(--accent-font);
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var( --main-font-weight);
   line-height: 90%;
 }
 
@@ -391,7 +382,7 @@ margin: 0 0px 0 -8px;
   height: clamp(12.0625rem, 12.2315rem + -0.1878vw, 12.1875rem);
   padding: 27px 39px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--main-font-weight);
   line-height: 150%;
   text-transform: uppercase;
   color: var(--font-color);
