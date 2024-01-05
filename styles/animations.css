@@ -12,3 +12,119 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes pointer {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 4px;
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.theme-menu__button::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin-top: 0px;
+    background-color: var(--font-color);
+    transition: width 0.3s;
+  }
+  
+  .theme-menu__button:focus-visible::after {
+    width: 100%;
+  }
+
+.theme-menu__button:disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  
+  .theme-menu__button:active {
+    opacity: 0.6;
+  }
+  
+  .theme-menu__button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  
+  .theme-menu__button:focus {
+    outline: none;
+  }
+  
+  .theme-menu__button:focus-visible {
+    opacity: 0.6;
+  }
+ 
+
+.like-icon:hover .main-body {
+  fill: var(--font-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon:hover .core {
+  fill: var(--font-color);
+  transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon:active .main-body {
+  fill: var(--heart-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon:active .core {
+  fill: var(--heart-color);
+  transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-color);
+  transition: fill 0.3s 0.06s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heart-color);
+  transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon.is-liked .heart {
+  animation: scale 0.3s 0.1s ease-in alternate;
+  -webkit-animation: scale 0.3s 0.1s ease-in alternate;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks 0.3s 0.3s ease-in alternate;
+}
+
