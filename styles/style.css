@@ -17,7 +17,7 @@
 .page {
   font-family: var(--main-font), sans-serif;
   color: var(--font-color);
-  background-attachment: fixed; 
+  background-attachment: fixed;
 }
 
 .gradient {
@@ -111,13 +111,16 @@
     1px 0 var(--background-color), 0 -1px var(--background-color);
 }
 
-@supports((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
+@supports (
+  (text-stroke: 1px var(--background-color)) or
+    (-webkit-text-stroke: 1px var(--background-color))
+) {
   .content-card-picture-part-label {
-      -webkit-text-stroke: 1px var(--background-color);
-      text-stroke: 1px var(--background-color);
-      text-shadow: none;
+    -webkit-text-stroke: 1px var(--background-color);
+    text-stroke: 1px var(--background-color);
+    text-shadow: none;
   }
-} 
+}
 
 .content-card-picture {
   object-fit: cover;
@@ -193,7 +196,7 @@
 }
 
 .like-icon {
-margin: 0 0px 0 -8px;
+  margin: 0 0px 0 -8px;
 }
 
 .footer-save_button {
@@ -226,7 +229,7 @@ margin: 0 0px 0 -8px;
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
   font-style: normal;
-  font-weight: var( --main-font-weight), fantasy;
+  font-weight: var(--main-font-weight), fantasy;
   line-height: 90%;
 }
 
