@@ -229,7 +229,7 @@
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
   font-style: normal;
-  font-weight: var(--main-font-weight), fantasy;
+  font-weight: var(--main-font-weight);
   line-height: 90%;
 }
 
